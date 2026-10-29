@@ -1,0 +1,23 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "libs/annotations-26.1.0.jar",
+        "libs/annotations-26.1.0-sources.jar",
+        "libs/auto-service-annotations-1.1.1.jar",
+        "libs/auto-service-annotations-1.1.1-sources.jar",
+        "libs/byte-buddy-1.18.14.jar",
+        "libs/byte-buddy-1.18.14-sources.jar",
+        "libs/error_prone_annotations-2.5.1.jar",
+        "libs/error_prone_annotations-2.5.1-sources.jar",
+        "libs/failureaccess-1.0.3.jar",
+        "libs/failureaccess-1.0.3-sources.jar",
+        "libs/guava-33.7.2-jre.jar",
+        "libs/guava-33.7.2-jre-sources.jar",
+        "libs/j2objc-annotations-2.8.jar",
+        "libs/j2objc-annotations-2.8-sources.jar",
+        "libs/jspecify-1.0.1.jar",
+        "libs/jspecify-1.0.1-sources.jar",
+        "libs/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+        "libs/opentelemetry-api-1.66.0-sources.jar"
+    ]
+}
