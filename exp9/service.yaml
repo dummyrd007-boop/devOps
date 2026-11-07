@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: browser-hello-service
+spec:
+  selector:
+    app: browser-hello
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
+      nodePort: 32509
+  type: NodePort

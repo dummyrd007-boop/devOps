@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: browser-hello
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: browser-hello
+  template:
+    metadata:
+      labels:
+        app: browser-hello
+    spec:
+      containers:
+        - name: browser-hello
+          image: nginx:alpine
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: html-content
+              mountPath: /usr/share/nginx/html
+      volumes:
+        - name: html-content
+          configMap:
+            name: browser-hello-html

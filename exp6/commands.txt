@@ -1,0 +1,29 @@
+:: 1. Force clear any old container named 'mycontainer' to avoid naming conflicts
+docker rm -f mycontainer
+
+:: 2. Pull the Ubuntu image from the registry
+docker pull ubuntu:16.04
+
+:: 3. Create and run the container, run a quick command inside it, and exit immediately
+docker run --name mycontainer -it ubuntu:16.04 /bin/bash -c "echo 'Inside the container!'; exit"
+
+:: 4. List all running containers (should be empty since it exited)
+docker ps
+
+:: 5. List all containers including stopped ones (you will see 'mycontainer' here)
+docker ps -a
+
+:: 6. Start the stopped container back up
+docker start mycontainer
+
+:: 7. List running containers again (you will see it active now)
+docker ps
+
+:: 8. Stop the running container
+docker stop mycontainer
+
+:: 9. List all downloaded images on your machine
+docker images
+
+:: 10. Permanently remove the container to clean up space
+docker rm mycontainer
